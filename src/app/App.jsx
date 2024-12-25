@@ -174,10 +174,10 @@ function App() {
 					<a className={style.github} target="_blank" href='https://github.com/manikandan-e56' >
 						<AiFillGithub size="30px" color='black' />
 					</a>
-					<a className={style.linkedin} target="_blank" href='https://www.linkedin.com/in/manie-e/' >
+					<a className={style.linkedin} target="_blank" href='https://www.linkedin.com/in/manikandan-e-manie/' >
 						<AiFillLinkedin size="30px" color='black' />
 					</a>
-					<a className={style.gmail} target="_blank" href="mailto:emanidon123@gmail.com?subject=SendMail&body=Description" >
+					<a className={style.gmail} target="_blank" href="mailto:emanigandan58@gmail.com?subject=SendMail&body=Description" >
 						<BiLogoGmail size="30px" color='black' />
 					</a>
 					
@@ -285,10 +285,10 @@ function App() {
 								<a className={style.git} target="_blank" href='https://github.com/manikandan-e56' >
 									<AiFillGithub size="30px" color='white' />
 								</a>
-								<a className={style.linkedin} target="_blank" href='https://www.linkedin.com/in/ibrahim-hiarea/' >
+								<a className={style.linkedin} target="_blank" href='https://www.linkedin.com/in/manikandan-e-manie/' >
 									<AiFillLinkedin size="30px" color='white' />
 								</a>
-								<a className={style.gmail} target="_blank" href="mailto:emanidon123@gmail.com?subject=SendMail&body=Description" >
+								<a className={style.gmail} target="_blank" href="mailto:emanigandan58@gmail.com?subject=SendMail&body=Description" >
 									<BiLogoGmail size="30px" color='white' />
 								</a>
 								
