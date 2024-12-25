@@ -69,7 +69,7 @@ const skills = [
 	{
 		name: 'GitHub',
 		icon: <BsGithub size="25px" color="white" />,
-		cssName: "gitHub"
+		cssName: "git-hub"
 	},
 	{
 		name: 'java',
@@ -77,9 +77,9 @@ const skills = [
 		cssName: "java"
 	},
 	{
-		name: 'Postgres SQL',
+		name: 'postgres-SQL',
 		icon: <BiLogoPostgresql size="25px" color="white" />,
-		cssName: "PostgresSql"
+		cssName: "postgres-SQL"
 	},
 	
 	
@@ -102,7 +102,7 @@ function App() {
 		setLoading(true);
 
 		setTimeout(function () {
-			emailjs.sendForm('service_gjbmeus', 'template_qk6p0pa', form.current, 'HDMwz57k3xrihLg4J')
+			emailjs.sendForm('service_js471rj', 'template_154p6fr', form.current, 'Y_-QvcP4nNEEORa6x')
 				.then((result) => {
 					e.target.name.value = '';
 					e.target.email.value = '';
@@ -234,7 +234,7 @@ function App() {
 						<InputField
 							width="700px"
 							height="40px"
-							name="name"
+							name="user_name"
 							placeholder="Enter Your Name"
 							label="Name"
 							type="text"
@@ -242,7 +242,7 @@ function App() {
 						<InputField
 							width="700px"
 							height="40px"
-							name="email"
+							name="user_email"
 							placeholder="Enter Your Email"
 							label="Email"
 							type="email"

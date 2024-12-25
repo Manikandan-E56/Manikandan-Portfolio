@@ -599,12 +599,15 @@
 .java-script:hover::after {
     background-color: var(--java-script-color);
 }
+.Node:hover::after {
+    background-color: green;
+}
 
 .react:hover::after {
     background-color: var(--react-color);
 }
 
-.redux:hover::after {
+.Bootstrap:hover::after {
     background-color: var(--redux-color);
 }
 
@@ -620,8 +623,8 @@
     background-color: var(--java-color);
 }
 
-.cpp:hover::after {
-    background-color: var(--cpp-color);
+.postgres-SQL:hover::after {
+    background-color:  #008bb9;
 }
 
 .problem-solving:hover::after {
