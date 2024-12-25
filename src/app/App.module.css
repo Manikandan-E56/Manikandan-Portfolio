@@ -398,7 +398,7 @@
 .github:hover>svg,
 .linkedin:hover>svg,
 .gmail:hover>svg,
-.facebook:hover>svg,
+.leetcode:hover>svg
 .react-query:hover>svg,
 .recoil:hover>svg {
     fill: white;
@@ -414,16 +414,17 @@
     background-color: var(--linked-in-color);
     transition: .3s;
 }
+.leetcode:hover{
+    background-color: white;
+    transform-origin: .3s;
+}
 
 .gmail:hover {
     background-color: var(--gmail-color);
     transition: .3s;
 }
 
-.facebook:hover {
-    background-color: var(--facebook-color);
-    transition: .3s;
-}
+
 
 .git:hover {
     background-color: var(--git-color);

@@ -18,7 +18,7 @@ import { BsFacebook, BsGit, BsGithub, BsPuzzle } from "react-icons/bs";
 
 import { FaMobileAlt } from "react-icons/fa";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { SiTypescript, SiRecoil, SiReactquery } from "react-icons/si";
+import { SiTypescript, SiRecoil, SiReactquery, SiLeetcode } from "react-icons/si";
 
 
 
@@ -179,6 +179,9 @@ function App() {
 					</a>
 					<a className={style.gmail} target="_blank" href="mailto:emanigandan58@gmail.com?subject=SendMail&body=Description" >
 						<BiLogoGmail size="30px" color='black' />
+					</a>
+					<a className={style.leetcode} target="_blank" href="https://leetcode.com/u/717822d128/" >
+						<SiLeetcode size="30px" color='black' />
 					</a>
 					
 				</div>
