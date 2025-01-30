@@ -90,6 +90,14 @@ const skills = [
 	}
 ];
 
+const certificate=[
+	{
+		img:"",
+		name:"",
+		brand:"",
+		date:""
+	}
+]
 
 function App() {
 	const form = useRef();
@@ -216,8 +224,13 @@ function App() {
 				</div>
 			</div>
 
-			{/* Projects */}
-			
+			{/* Certifications */}
+			{/* <div id='Certificate' className={style.certificate}>
+				<div className={style.conatainer}>
+					<h2 className={style.title}>Certification</h2>
+				</div>
+
+			</div> */}
 
 			{/* Contact */}
 			<div id='Contact' className={style.contact}>
@@ -279,7 +292,7 @@ function App() {
 				<div className={style.container}>
 					<div className={style["footer-info"]}>
 						<div>
-							<h3>Manikandan</h3>
+							<h3>Manikandan E</h3>
 							<p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
 						</div>
 						<div className={style.social}>
@@ -299,7 +312,7 @@ function App() {
 						</div>
 					</div>
 					<div className={style["copy-right"]}>
-						© Copyright 2024. Made by <span>Manikandan</span>
+						© Copyright 2025. Made by <span>Manikandan</span>
 					</div>
 				</div>
 			</div>
