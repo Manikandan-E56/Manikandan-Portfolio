@@ -42,7 +42,7 @@ import {
 // import style
 import style from "./App.module.css";
 import clsx from "clsx";
-
+  
 const skills = [
   {
     name: "HTML 5",
@@ -109,18 +109,20 @@ const skills = [
 ];
 
 const certificates = [
+  {
+    image: "./img/java Basic.jpg",
+    title: "Java",
+    issuer: "HackerRank",
+    date: "Aug 2024",
+  },
 	{
 	  image: "./img/Udemy.jpg",
 	  title: "Web Development",
 	  issuer: "Udemy",
 	  date: "Dec 2024",
 	},
-	{
-	  image: "./img/java Basic.jpg",
-	  title: "Java",
-	  issuer: "HackerRank",
-	  date: "Aug 2024",
-	},
+	
+  
 	
 	
   ];
