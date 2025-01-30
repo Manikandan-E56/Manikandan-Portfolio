@@ -30,6 +30,7 @@
   --type-script-color: #007acc;
   --recoil-color: #3578e5;
   --react-query-color: #f73f51;
+  --MongoDb-color:var(--cpp-color);
 }
 
 html {
