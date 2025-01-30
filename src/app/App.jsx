@@ -110,19 +110,19 @@ const skills = [
 
 const certificates = [
 	{
-	  image: "./public/Certification/Udemy.jpg",
+	  image: "./img/java Basic.jpg",
 	  title: "Web Development",
 	  issuer: "Udemy",
 	  date: "Dec 2024",
 	},
 	{
-	  image: "./public/Certification/java Basic.jpg",
+	  image: "./img/java Basic.jpg",
 	  title: "Java",
 	  issuer: "HackerRank",
 	  date: "Aug 2024",
 	},
 	{
-	  image: "./public/Certification/java Basic.jpg",
+	  image: "./img/java Basic.jpg",
 	  title: "Java",
 	  issuer: "HackerRank",
 	  date: "Aug 2024",
