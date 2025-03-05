@@ -122,6 +122,12 @@ const certificates = [
 	  date: "Dec 2024",
 	},
 	{
+	  image: "./img/Backend.png",
+	  title: "Backend Development",
+	  issuer: "Coursera",
+	  date: "Mar 2025",
+	},
+	{
 	  image: "./img/Frontend Developer.png",
 	  title: "Frontend-Development",
 	  issuer: "Hackerrank",
