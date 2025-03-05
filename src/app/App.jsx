@@ -121,6 +121,24 @@ const certificates = [
 	  issuer: "Udemy",
 	  date: "Dec 2024",
 	},
+	{
+	  image: "./img/Frontend Developer.png",
+	  title: "Frontend-Development",
+	  issuer: "Hackerrank",
+	  date: "Mar 2025",
+	},
+	{
+	  image: "./img/css Basic.png",
+	  title: "Css",
+	  issuer: "HackerRank",
+	  date: "Mar 2025",
+	},
+	{
+	  image: "./img/JavaScript.png",
+	  title: "Javascript (Intermediate)",
+	  issuer: "HackerRank",
+	  date: "Mar 2025",
+	},
 	
   
 	
