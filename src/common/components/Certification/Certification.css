@@ -3,24 +3,22 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  
 }
 
 .certificate-container {
   display: flex;
-  overflow-x: auto; 
+  overflow-x: auto;
   padding: 20px;
-  gap: 40px; 
-  align-items: center;
-  justify-content: center;
+  gap: 40px;
   height: 70vh;
   width: 100%;
   scroll-behavior: smooth; /* Smooth scrolling */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
+
 .certificate-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome/Safari */
-} 
+}
 
 .certificate-item {
   position: relative;
@@ -43,7 +41,6 @@ body {
   height: auto;
   display: block;
   cursor: pointer;
-  
 }
 
 .certificate-details {
@@ -85,14 +82,15 @@ body {
   font-size: 30px;
   cursor: pointer;
 }
+
 .app {
   position: relative;
 }
 
 @media (max-width: 1100px) {
   .certificate-container {
-      display: flex;
-      flex-direction:row;
+    display: flex;
+    flex-direction: row;
     height: auto; /* Adjust height for mobile */
     padding: 10px;
   }
@@ -100,11 +98,13 @@ body {
   .certificate-item {
     width: 200px; /* Smaller width for mobile */
   }
-.fullscreen-overlay{
-  display: block;
-  justify-content: center;
-  align-content: center;
-}
+
+  .fullscreen-overlay {
+    display: block;
+    justify-content: center;
+    align-content: center;
+  }
+
   .fullscreen-image {
     max-width: 90%; /* Full width on mobile */
     max-height: 90%;
@@ -114,6 +114,4 @@ body {
   .fullscreen-details {
     font-size: 14px; /* Smaller text for mobile */
   }
-
-  
 }
