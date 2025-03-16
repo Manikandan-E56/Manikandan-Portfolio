@@ -8,7 +8,7 @@ import InputField from "../common/components/InputField/InputField";
 import TextAreaField from "../common/components/TextAreaField/TextAreaField";
 import SubmitButton from "../common/components/SubmitButton/SubmitButton";
 import Loader from "../common/components/Loader/Loader";
-import cv from "../assets/files/cv.pdf";
+import cv from "../assets/files/717822D128-Manikandan-E.pdf";
 import Certificate from "../common/components/Certification/Certification";
 // import icons
 import { FaBootstrap, FaReact } from "react-icons/fa";
@@ -193,6 +193,9 @@ function App() {
           <li>
             <a href="#About">About</a>
           </li>
+          {/*<li> 
+            <a href="#Projects">Projects</a>
+          </li>*/}
           <li>
             <a href="#Certification">Certification</a>
           </li>
@@ -220,6 +223,9 @@ function App() {
           </li>
           <li>
             <a href="#About">About</a>
+          </li>
+          <li> 
+            <a href="#Projects">Projects</a>
           </li>
           <li>
             <a href="#Certification">Certification</a>
@@ -332,6 +338,12 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Projects*/}
+      {/*<div id="Projects" className={style.Projects}>
+        <div className={style.title}>Projects</div>
+
+      </div> **/}
 
       {/* Certifications */}
       <div id="Certification" className={style.certificate}>
