@@ -224,7 +224,7 @@
 
 .home {
     color: #fff;
-   background:linear-gradient(to right, rgba(245, 245, 245, .8), rgba(167, 165, 165, 0.8)), url(https://e0.pxfuel.com/wallpapers/56/691/desktop-wallpaper-turquoise-abstract-background-creative-geometric-shapes-artwork-geometric-backgrounds-material-design-turquoise-backgrounds.jpg);
+   background:linear-gradient(to right, rgba(245, 245, 245, .8), rgba(167, 165, 165, 0.8)), url('/img/homebg.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
