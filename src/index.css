@@ -31,6 +31,7 @@
   --recoil-color: #3578e5;
   --react-query-color: #f73f51;
   --MongoDb-color:var(--cpp-color);
+  --Dotnet-color:#512bd4;
 }
 
 html {

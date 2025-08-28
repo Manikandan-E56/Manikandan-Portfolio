@@ -649,6 +649,9 @@
 .MongoDb:hover::after{
     background-color: var(--MongoDb-color);
 }
+.Dotnet:hover::after{
+    background-color: var(--Dotnet-color);
+}
 
 @media (max-width: 768px) {
     .about-content {

@@ -11,12 +11,13 @@ import Loader from "../common/components/Loader/Loader";
 import cv from "../assets/files/Manikandan_E-717822D128.pdf";
 import Certificate from "../common/components/Certification/Certification";
 // import icons
-import { FaBootstrap, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaDonate, FaReact } from "react-icons/fa";
+import { SiBattledotnet } from "react-icons/si";
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillHtml5,
-  AiOutlineEye,
+  
 } from "react-icons/ai";
 import {
   BiLogoGmail,
@@ -105,6 +106,11 @@ const skills = [
     name: "MongoDb",
     icon: <BiLogoMongodb size="25px" color="white" />,
     cssName: "MongoDb",
+  },
+  {
+    name: "Dotnet",
+    icon: <SiBattledotnet size="25px" color="white" />,
+    cssName: "Dotnet",
   },
 ];
 
