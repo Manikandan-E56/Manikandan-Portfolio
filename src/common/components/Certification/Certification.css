@@ -12,7 +12,7 @@ body {
   gap: 40px;
   height: 70vh;
   width: 100%;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth; 
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
