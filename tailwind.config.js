@@ -1,12 +1,11 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "hero-gradient": "linear-gradient(135deg, hsl(215 85% 35%), hsl(25 85% 60%))",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }

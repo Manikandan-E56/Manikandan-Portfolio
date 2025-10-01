@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState }from 'react'
 import style from "./App.module.css";
 import { FaReact } from "react-icons/fa";
 
 export default function NavBar() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div className={style.nav}>
             <a className={style.logo}>

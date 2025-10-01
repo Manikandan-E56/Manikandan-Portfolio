@@ -9,10 +9,9 @@ import TextAreaField from "../common/components/TextAreaField/TextAreaField";
 import SubmitButton from "../common/components/SubmitButton/SubmitButton";
 import Loader from "../common/components/Loader/Loader";
 import cv from "../assets/files/Manikandan_E-717822D128.pdf";
-import Certificate from "../common/components/Certification/Certification";
+
 // import icons
-import { FaBootstrap, FaDonate, FaFigma, FaReact } from "react-icons/fa";
-import { SiBattledotnet, SiFigma } from "react-icons/si";
+
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -21,24 +20,9 @@ import {
 } from "react-icons/ai";
 import {
   BiLogoGmail,
-  BiLogoCss3,
-  BiLogoJavascript,
-  BiLogoRedux,
-  BiLogoJava,
-  BiLogoMongodb,
-  BiLogoPostgresql,
-  BiLogoNodejs,
 } from "react-icons/bi";
-import { BsFacebook, BsGit, BsGithub, BsPuzzle } from "react-icons/bs";
 
-import { FaMobileAlt } from "react-icons/fa";
-import { RiSendPlaneFill } from "react-icons/ri";
-import {
-  SiTypescript,
-  SiRecoil,
-  SiReactquery,
-  SiLeetcode,
-} from "react-icons/si";
+import {SiLeetcode,} from "react-icons/si";
 
 // import style
 import style from "./App.module.css";
@@ -47,7 +31,7 @@ import Projects from "./Projects";
 import NavBar from "./NavBar";
 import About from "./About";
 import Certification from "./Certification";
-import Context from "./Context";
+import Context from "./Contect";
   
 
 

@@ -9,5 +9,11 @@ export default defineConfig({
   plugins: [react(), svgr(),tailwindcss(),],
   server: {
     port: 3000,
+  },
+  build: {
+    css: {
+      devSourcemap: true, 
+    }
   }
+
 })

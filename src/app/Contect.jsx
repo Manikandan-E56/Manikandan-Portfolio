@@ -5,9 +5,8 @@ import TextAreaField from "../common/components/TextAreaField/TextAreaField";
 import SubmitButton from "../common/components/SubmitButton/SubmitButton";
 import Loader from "../common/components/Loader/Loader";
 import { RiSendPlaneFill } from "react-icons/ri";
-
+import emailjs from "@emailjs/browser";
 import clsx from "clsx";
-
 
 
 
