@@ -1,4 +1,16 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-hero: linear-gradient(135deg, hsl(215 85% 35%), hsl(25 85% 60%));
+}
+body {
+  background: var(--gradient-hero) ;
+}
+
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */

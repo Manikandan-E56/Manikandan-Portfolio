@@ -1,3 +1,9 @@
+@import "tailwindcss";
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -31,6 +37,7 @@
   --recoil-color: #3578e5;
   --react-query-color: #f73f51;
   --MongoDb-color:var(--cpp-color);
+  --Figma-color:#f24e1e;
   --Dotnet-color:#512bd4;
 }
 
