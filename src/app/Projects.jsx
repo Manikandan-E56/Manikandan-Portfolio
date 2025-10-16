@@ -7,7 +7,7 @@ const Projects = () => {
       description: "A full-stack food delivery app with real-time order tracking.",
       image: "https://img.freepik.com/free-vector/food-delivery-logo-with-bike-man-courier_1308-48914.jpg",
       tags: ["React", "Node.js", "MongoDB","HTML","CSS"],
-      liveUrl: "#",
+      liveUrl: "https://food-order-frontend-seven.vercel.app",
       codeUrl: "https://github.com/Manikandan-E56/Food-Order-Frontend.git",
     },
     {
