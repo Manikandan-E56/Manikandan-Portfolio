@@ -44,33 +44,35 @@ function App() {
  
 
   const [menu, setMenu] = useState(false);
-
+const handleLinkClick = () => {
+    setMenu(!menu);
+  };
  
 
   return (
     <div className={style.app}>
       {/* Navbar */}
-      <div className={style.nav}>
+       <div className={style.nav}>
                   <a className={style.logo}>
                     <FaReact color="var(--primary-main)" size="50px" />
                     <h5>Portfolio</h5>
                   </a>
                   <ul>
                     <li>
-                      <a href="#Home">Home</a>
+                      <a href="#Home" onClick={handleLinkClick}>Home</a>
                     </li>
                     <li>
-                      <a href="#About">About</a>
+                      <a href="#About" onClick={handleLinkClick}>About</a>
                     </li>
                     <li> 
-                      <a href="#Projects">Projects</a>
+                      <a href="#Projects" onClick={handleLinkClick}>Projects</a>
                     </li>
                     <li>
-                      <a href="#Certification">Certification</a>
+                      <a href="#Certification" onClick={handleLinkClick}>Certification</a>
                     </li>
                     <li>
           
-                      <a href="#Contact">Contact</a>
+                      <a href="#Contact" onClick={handleLinkClick}>Contact</a>
                     </li>
                   </ul>
                   <div className={style["menu-icon"]}>
@@ -86,9 +88,9 @@ function App() {
                     </label>
                   </div>
                   
-                </div>
+                </div> 
                 
-      {menu === true && (
+       {menu === true && (
         <ul className={style.menu}>
           <li>
             <a href="#Home">Home</a>
@@ -106,7 +108,10 @@ function App() {
             <a href="#Contact">Contact</a>
           </li>
         </ul>
-      )}
+      )} 
+
+
+
 
       {/* Home */}
       <div id="Home" className={style.home}>
