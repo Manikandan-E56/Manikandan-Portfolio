@@ -1,92 +1,49 @@
 @import "tailwindcss";
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  
+  --color-primary: #6366f1;
+  --color-primary-dark: #4338ca;
+  --color-primary-light: #818cf8;
+  
+  --color-secondary: #ec4899;
+  --color-secondary-dark: #be185d;
+  --color-secondary-light: #f472b6;
+
+  --color-dark: #0f172a;
+  --color-dark-card: #1e293b;
+  --color-dark-text: #f8fafc;
+  --color-dark-muted: #94a3b8;
 }
 
 :root {
-  /* primary */
-  --primary-main: #5e07cd;
-  --primary-light: #7843e9;
-  --word-color: #333;
-  --title-color: #111;
-  --back-ground-color: #fafafa;
-  --paragraph-color: #555;
-
-  /* icons color */
-  --html-color: #e34c26;
-  --css-color: #264de4;
-  --java-script-color: #f1d01b;
-  --react-color: #61dafb;
-  --redux-color: #764abc;
-  --github-color: #000000;
-  --git-color: #f05539;
-  --java-color: #5382a1;
-  --cpp-color: #4caf50;
-  --facebook-color: #4267B2;
-  --linked-in-color: #0077b5;
-  --gmail-color: #c72923;
-  --leetcode-color:white;
-  --type-script-color: #007acc;
-  --recoil-color: #3578e5;
-  --react-query-color: #f73f51;
-  --MongoDb-color:var(--cpp-color);
-  --Figma-color:#f24e1e;
-  --Dotnet-color:#512bd4;
-}
-
-html {
-  scroll-behavior: smooth;
-  /* overflow: hidden; */
+  color-scheme: dark;
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  align-items: center ;
+  @apply bg-gray-950 text-gray-100 font-sans antialiased;
+  overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
 }
 
-/* media */
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
 }
 
-/* Small */
-@media (max-width: 768px) {
-  .container {
-    width: 750px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
 }
 
-/* Medium */
-@media (max-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-/* Large */
-@media (max-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
