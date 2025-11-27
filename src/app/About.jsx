@@ -1,8 +1,7 @@
-
-
+import React from "react";
 import { motion } from "framer-motion";
 import { FaBootstrap, FaReact, FaMobileAlt } from "react-icons/fa";
-import { BsGithub, BsPuzzle } from "react-icons/bs";
+import { BsGithub, BsPuzzle, BsStars } from "react-icons/bs";
 import { SiBattledotnet, SiFigma } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import {
@@ -36,6 +35,7 @@ const skills = {
     { name: "GitHub", icon: <BsGithub size="25px" />, color: "text-white" },
     { name: "Figma", icon: <SiFigma size="25px" />, color: "text-pink-500" },
     { name: "Problem Solving", icon: <BsPuzzle size="25px" />, color: "text-green-400" },
+    { name: "Vibe Coding", icon: <BsStars size="25px" />, color: "text-yellow-300" },
   ],
 };
 
