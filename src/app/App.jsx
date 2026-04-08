@@ -11,7 +11,7 @@ import Projects from "./Projects";
 import Certification from "./Certification";
 import Context from "./Contact";
 import DownloadButton from "../common/components/DownloadButton/DownloadButton";
-import cv from "../assets/files/Manikandan_E-717822D128.pdf";
+import cv from "../assets/files/Resume.pdf";
 import profileImg from "../assets/Profile.png";
 
 // import style
@@ -85,7 +85,7 @@ function App() {
                   { Icon: AiFillGithub, href: "https://github.com/manikandan-e56" },
                   { Icon: AiFillLinkedin, href: "https://www.linkedin.com/in/manikandan-e-manie/" },
                   { Icon: BiLogoGmail, href: "mailto:emanigandan58@gmail.com" },
-                  { Icon: SiLeetcode, href: "https://leetcode.com/u/717822d128/" },
+                  { Icon: SiLeetcode, href: "https://leetcode.com/u/manikandan-e/" },
                 ].map(({ Icon, href }, index) => (
                   <a
                     key={index}

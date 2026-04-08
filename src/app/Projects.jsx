@@ -18,7 +18,7 @@ const Projects = () => {
       image: "https://files.ably.io/ghost/prod/2023/01/build-a-realtime-chat-app-from-scratch--1-.png",
       tags: ["React", "Node.js", "MongoDB", "Socket.io"],
       liveUrl: "#",
-      codeUrl: "https://github.com/Manikandan-E56/RandomChat.git",
+      codeUrl: "https://github.com/Manikandan-E56/Connectify.git",
     },
     {
       title: "Student Club Management",
@@ -26,7 +26,7 @@ const Projects = () => {
       image: "https://miro.medium.com/v2/resize:fit:1400/1*NaUmBti42n0FMMffyjTtBg.jpeg",
       tags: ["React", "Express", "MongoDB", "HTML", "CSS"],
       liveUrl: "https://student-club-management.vercel.app/",
-      codeUrl: "https://github.com/Manikandan-E56/Project-MyAnatomy",
+      codeUrl: "https://github.com/Manikandan-E56/Student-Club-Management.git",
     },
     {
       title: "Company-Job Portal",
