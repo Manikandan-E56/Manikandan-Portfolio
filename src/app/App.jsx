@@ -10,6 +10,7 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Projects from "./Projects";
 import Certification from "./Certification";
+import Achievements from "./Achievements";
 import Context from "./Contact";
 import cv from "../assets/files/Resume.pdf";
 import profileImg from "../assets/Profile.png";
@@ -567,6 +568,18 @@ function App() {
             }}
           />
           <Certification />
+        </section>
+
+        {/* ── Achievements ── */}
+        <section id="Achievements" className="py-28 relative overflow-hidden">
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "radial-gradient(ellipse at bottom left, rgba(251,191,36,0.05) 0%, transparent 60%)",
+              pointerEvents: "none",
+            }}
+          />
+          <Achievements />
         </section>
 
         {/* ── Contact ── */}
