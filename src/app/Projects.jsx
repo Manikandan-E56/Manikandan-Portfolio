@@ -108,7 +108,7 @@ const Projects = () => {
           <button
             key={tag}
             onClick={() => setSelectedTag(tag)}
-            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 border  ${
+            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 border cursor-pointer  ${
               selectedTag === tag
                 ? "bg-gradient-to-r from-violet-600 to-cyan-500 border-transparent text-white shadow-lg shadow-violet-500/30"
                 : "bg-[#0d1224]/80 border-white/10 text-slate-400 hover:text-slate-200 hover:border-white/20"

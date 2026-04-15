@@ -302,8 +302,7 @@ function App() {
                 className="text-base leading-relaxed max-w-lg mx-auto lg:mx-0 mb-10"
                 style={{ color: "#8892b0" }}
               >
-                A passionate Frontend Web Developer building beautiful, interactive
-                websites and web applications that deliver exceptional user experiences.
+                An enthusiastic developer passionate about creating efficient, user-friendly web applications and continuously improving technical and problem-solving skills
               </motion.p>
 
               <motion.div
@@ -386,80 +385,127 @@ function App() {
 
             {/* Profile Image */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              initial={{ opacity: 0, x: 50, scale: 0.9 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
               className="flex justify-center items-center"
             >
-              <div className="relative w-72 h-72 lg:w-96 lg:h-96">
-                {/* Outer rotating ring */}
+              <div className="relative">
+
+                {/* Ambient glow blobs behind the card */}
                 <div
-                  className="absolute inset-0 rounded-full"
+                  className="absolute -inset-6 rounded-3xl"
                   style={{
-                    background: "conic-gradient(from 0deg, #7c3aed, #06b6d4, #ec4899, #7c3aed)",
-                    animation: "spin 8s linear infinite",
-                    padding: "3px",
-                  }}
-                >
-                  <div className="w-full h-full rounded-full" style={{ background: "#050816" }} />
-                </div>
-                {/* Inner glow ring */}
-                <div
-                  className="absolute inset-3 rounded-full"
-                  style={{
-                    background: "conic-gradient(from 180deg, #06b6d4, #7c3aed, #ec4899, #06b6d4)",
-                    animation: "spin-reverse 10s linear infinite",
-                    opacity: 0.4,
-                    filter: "blur(2px)",
+                    background: "radial-gradient(ellipse at 30% 50%, rgba(124,58,237,0.35) 0%, transparent 60%)",
+                    filter: "blur(24px)",
+                    zIndex: 0,
                   }}
                 />
-                {/* Profile image */}
                 <div
-                  className="absolute inset-4 rounded-full overflow-hidden"
+                  className="absolute -inset-6 rounded-3xl"
                   style={{
-                    boxShadow: "0 0 40px rgba(124, 58, 237, 0.4), inset 0 0 20px rgba(0,0,0,0.5)",
+                    background: "radial-gradient(ellipse at 70% 50%, rgba(6,182,212,0.25) 0%, transparent 60%)",
+                    filter: "blur(24px)",
+                    zIndex: 0,
+                  }}
+                />
+
+                {/* Gradient border layer */}
+                <div
+                  className="relative rounded-3xl p-0.5"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(124,58,237,0.8) 0%, rgba(6,182,212,0.6) 50%, rgba(236,72,153,0.5) 100%)",
+                    zIndex: 1,
                   }}
                 >
-                  <img
-                    src={profileImg}
-                    alt="Manikandan"
-                    className="w-full h-full object-cover"
-                    style={{ transition: "transform 0.5s ease" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-                  />
+                  {/* Inner card */}
+                  <div
+                    className="rounded-3xl overflow-hidden"
+                    style={{
+                      width: "300px",
+                      height: "340px",
+                      background: "rgba(13, 18, 36, 0.6)",
+                      backdropFilter: "blur(8px)",
+                    }}
+                  >
+                    <img
+                      src={profileImg}
+                      alt="Manikandan"
+                      className="w-full h-full object-cover object-top transition-transform duration-700"
+                      onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.06)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+                    />
+                  </div>
                 </div>
 
-                {/* Floating Badge — Experience */}
+                {/* Floating Badge — Role */}
                 <motion.div
-                  animate={{ y: [0, -8, 0] }}
+                  animate={{ y: [0, -7, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -bottom-4 -left-4 px-4 py-2 rounded-xl text-xs font-semibold"
+                  className="absolute -bottom-5 -left-6 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-semibold"
                   style={{
-                    background: "rgba(13, 18, 36, 0.9)",
-                    border: "1px solid rgba(124, 58, 237, 0.3)",
-                    backdropFilter: "blur(10px)",
+                    background: "rgba(13, 18, 36, 0.92)",
+                    border: "1px solid rgba(124, 58, 237, 0.4)",
+                    backdropFilter: "blur(12px)",
                     color: "#a78bfa",
-                    boxShadow: "0 10px 30px rgba(124, 58, 237, 0.2)",
+                    boxShadow: "0 8px 32px rgba(124, 58, 237, 0.25)",
+                    zIndex: 2,
                   }}
                 >
-                  💻 Frontend Dev
+                  <span style={{ fontSize: "1.1rem" }}>💻</span>
+                  <div>
+                    <div style={{ color: "#a78bfa", fontWeight: 700 }}>Full Stack</div>
+                    <div style={{ color: "#6b7280", fontSize: "0.65rem" }}>Developer</div>
+                  </div>
                 </motion.div>
+
                 {/* Floating Badge — Projects */}
                 <motion.div
-                  animate={{ y: [0, 8, 0] }}
+                  animate={{ y: [0, 7, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -top-4 -right-4 px-4 py-2 rounded-xl text-xs font-semibold"
+                  className="absolute -top-5 -right-6 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-semibold"
                   style={{
-                    background: "rgba(13, 18, 36, 0.9)",
-                    border: "1px solid rgba(6, 182, 212, 0.3)",
-                    backdropFilter: "blur(10px)",
+                    background: "rgba(13, 18, 36, 0.92)",
+                    border: "1px solid rgba(6, 182, 212, 0.4)",
+                    backdropFilter: "blur(12px)",
                     color: "#67e8f9",
-                    boxShadow: "0 10px 30px rgba(6, 182, 212, 0.15)",
+                    boxShadow: "0 8px 32px rgba(6, 182, 212, 0.2)",
+                    zIndex: 2,
                   }}
                 >
-                  🚀 7+ Projects
+                  <span style={{ fontSize: "1.1rem" }}>🚀</span>
+                  <div>
+                    <div style={{ color: "#67e8f9", fontWeight: 700 }}>7+ Projects</div>
+                    <div style={{ color: "#6b7280", fontSize: "0.65rem" }}>Delivered</div>
+                  </div>
                 </motion.div>
+
+                {/* Floating Badge — Available */}
+                <motion.div
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute top-1/2 -right-8 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold"
+                  style={{
+                    background: "rgba(13, 18, 36, 0.92)",
+                    border: "1px solid rgba(34, 197, 94, 0.4)",
+                    backdropFilter: "blur(12px)",
+                    color: "#4ade80",
+                    boxShadow: "0 8px 24px rgba(34, 197, 94, 0.15)",
+                    zIndex: 2,
+                    transform: "translateY(-50%)",
+                  }}
+                >
+                  <span
+                    className="w-1.5 h-1.5 rounded-full"
+                    style={{
+                      background: "#4ade80",
+                      boxShadow: "0 0 6px #4ade80",
+                      animation: "blink 1.5s step-end infinite",
+                    }}
+                  />
+                  Available
+                </motion.div>
+
               </div>
             </motion.div>
           </div>
@@ -493,6 +539,7 @@ function App() {
             className="absolute inset-0"
             style={{
               background: "radial-gradient(ellipse at top, rgba(124,58,237,0.05) 0%, transparent 60%)",
+              pointerEvents: "none",
             }}
           />
           <About />
@@ -504,6 +551,7 @@ function App() {
             className="absolute inset-0"
             style={{
               background: "radial-gradient(ellipse at bottom right, rgba(6,182,212,0.05) 0%, transparent 60%)",
+              pointerEvents: "none",
             }}
           />
           <Projects />
@@ -515,6 +563,7 @@ function App() {
             className="absolute inset-0"
             style={{
               background: "radial-gradient(ellipse at top left, rgba(124,58,237,0.05) 0%, transparent 60%)",
+              pointerEvents: "none",
             }}
           />
           <Certification />
@@ -526,6 +575,7 @@ function App() {
             className="absolute inset-0"
             style={{
               background: "radial-gradient(ellipse at center, rgba(6,182,212,0.04) 0%, transparent 60%)",
+              pointerEvents: "none",
             }}
           />
           <Context />

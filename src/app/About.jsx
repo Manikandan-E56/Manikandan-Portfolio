@@ -137,15 +137,20 @@ export default function About() {
               <span style={{ color: "#7c3aed" }}>{"/>"}</span>
             </h3>
             <p className="leading-relaxed mb-5 text-sm" style={{ color: "#8892b0" }}>
-              I am a student and aspiring software developer from{" "}
-              <span style={{ color: "#a78bfa", fontWeight: 600 }}>Coimbatore</span>, with a strong
-              interest in software development, full-stack development, and UI/UX design. I am
-              focused on building a solid foundation in technology and design while exploring
-              innovative solutions to complex challenges.
+              I am a motivated and passionate{" "}
+              <span style={{ color: "#a78bfa", fontWeight: 600 }}>Full Stack Developer</span> with a
+              strong interest in building scalable and user-friendly web applications. I have
+              hands-on experience in technologies like{" "}
+              <span style={{ color: "#67e8f9", fontWeight: 600 }}>React, ASP.NET Core, JavaScript, HTML,</span>{" "}
+              and <span style={{ color: "#67e8f9", fontWeight: 600 }}>CSS</span>. I enjoy creating
+              responsive and interactive user interfaces while also working on efficient backend
+              solutions.
             </p>
             <p className="leading-relaxed text-sm" style={{ color: "#8892b0" }}>
-              Committed to continuous learning, I aim to contribute effectively to the tech industry
-              and grow as a versatile professional capable of addressing diverse needs.
+              I am continuously improving my problem-solving and communication skills to become a
+              better developer. I am eager to learn new technologies and adapt to industry trends.
+              My goal is to contribute to impactful projects and grow as a skilled software
+              developer.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2">
