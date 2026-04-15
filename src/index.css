@@ -1,49 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap");
 @import "tailwindcss";
 
 @theme {
   --font-sans: "DM Sans", sans-serif;
-  
-  --color-primary: #6366f1;
-  --color-primary-dark: #4338ca;
-  --color-primary-light: #818cf8;
-  
-  --color-secondary: #ec4899;
-  --color-secondary-dark: #be185d;
-  --color-secondary-light: #f472b6;
+  --font-mono: "Fira Code", monospace;
 
-  --color-dark: #0f172a;
-  --color-dark-card: #1e293b;
-  --color-dark-text: #f8fafc;
-  --color-dark-muted: #94a3b8;
+  --color-primary: #7c3aed;
+  --color-primary-dark: #5b21b6;
+  --color-primary-light: #a78bfa;
+
+  --color-secondary: #06b6d4;
+  --color-secondary-dark: #0891b2;
+  --color-secondary-light: #67e8f9;
+
+  --color-dark: #050816;
+  --color-dark-card: #0d1224;
+  --color-dark-text: #e2e8f0;
+  --color-dark-muted: #8892b0;
 }
 
 :root {
   color-scheme: dark;
 }
 
+/* ─── Base ─── */
 body {
-  @apply bg-gray-950 text-gray-100 font-sans antialiased;
+  background-color: #050816;
+  color: #e2e8f0;
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-/* Custom Scrollbar */
+/* ─── Custom Scrollbar ─── */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  @apply bg-gray-900;
+  background: #050816;
 }
-
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-700 rounded-full;
+  background: linear-gradient(180deg, #7c3aed, #06b6d4);
+  border-radius: 9999px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-600;
-}
-
-/* Smooth Scroll */
+/* ─── Smooth Scroll ─── */
 html {
   scroll-behavior: smooth;
+}
+
+/* ─── Glassmorphism ─── */
+.glass {
+  background: rgba(13, 18, 36, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(13, 18, 36, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* ─── Neon Text ─── */
+.neon-text {
+  background: linear-gradient(135deg, #a78bfa, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.neon-text-violet {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Shimmer Border ─── */
+.shimmer-border {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.shimmer-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.6), rgba(6, 182, 212, 0.6), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+  border-radius: inherit;
+  z-index: 0;
+}
+.shimmer-border > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Scroll Progress Bar ─── */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  z-index: 9999;
+  transition: width 0.1s ease;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.7);
+}
+
+/* ─── Section Heading Underline ─── */
+.section-heading {
+  position: relative;
+  display: inline-block;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+}
+
+/* ─── Card 3D Tilt ─── */
+.tilt-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+.tilt-card:hover {
+  transform: perspective(1000px) rotateX(-3deg) rotateY(3deg) translateY(-8px);
+  box-shadow: 0 30px 60px rgba(124, 58, 237, 0.25);
+}
+
+/* ─── Glow Button ─── */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #06b6d4, #7c3aed);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-glow:hover::before {
+  opacity: 1;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.6), 0 0 60px rgba(6, 182, 212, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ─── Input Neon Focus ─── */
+.neon-input {
+  background: rgba(13, 18, 36, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+.neon-input:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2), 0 0 20px rgba(124, 58, 237, 0.15);
+}
+.neon-input::placeholder {
+  color: #4a5568;
+}
+
+/* ─── Cursor Glow ─── */
+#cursor-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+/* ─── Typewriter Cursor ─── */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #06b6d4;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ─── Sidebar Active Link ─── */
+.sidebar-link.active .sidebar-indicator {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.sidebar-link.active .sidebar-text {
+  color: #a78bfa;
+}
+.sidebar-link.active .sidebar-icon {
+  color: #a78bfa;
+  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.8));
+}
+
+/* ─── Shimmer animation ─── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ─── Floating animation ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* ─── Aurora animation ─── */
+@keyframes aurora {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  33% { transform: translate(4%, 8%) scale(1.1); opacity: 0.7; }
+  66% { transform: translate(-4%, 4%) scale(0.95); opacity: 0.4; }
+}
+
+/* ─── Skill Badge ─── */
+.skill-badge {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.skill-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.skill-badge:hover::before {
+  opacity: 1;
+}
+.skill-badge:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+  transform: translateY(-4px);
 }
